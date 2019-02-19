@@ -41,7 +41,7 @@ function fadeAllOut (el, group) {
     if (div === el) {
       delayedFadeOut(div, LONGRANGE)
     } else {
-      delayedFadeOut(div, SHORTRANGE + Math.floor((Math.random() * 100) + 50))
+      delayedFadeOut(div, SHORTRANGE + Math.floor((Math.random() * 200) + 50))
     }
   })
 }
@@ -49,6 +49,6 @@ function fadeAllOut (el, group) {
 function fadeAllIn (group) {
   // Your solution here
   group.forEach(div => {
-    delayedFadeIn(div, LONGESTPOSSIBLE)
+    delayedFadeIn(div, SHORTRANGE + Math.floor((Math.random() * 200) + 50))
   })
 }
